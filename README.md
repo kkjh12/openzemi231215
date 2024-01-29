@@ -47,4 +47,10 @@ The second limitation is that the future plans we came up with are all based on 
 # Get Access to Our Prototype
 Unfortunately, we need more time to make the application publicly available, but we can give you access to the application if you give us your email. 
 Either come to my computer and write your emails, or submit this form, and I’ll add you to the whitelist of our application. 
+Link to form: https://forms.gle/rgo3xWYazvLBQ1oZ9 
+- Once you submit the form, I'll add you to the whitelist of our application soon.
+- Then, you'll receive an invitation from 'Databutton'
+- You can easily access the prototype from there
 
+# Caution
+- Code are available in the github directory, BUT since we used an external software called 'Databutton' to make the prototype instead of Streamlit itself, the codes might need additional changes to be applied on Streamlit.
