@@ -1,17 +1,21 @@
 import streamlit as st
 import base64
+import databutton as db
+
 from openai import OpenAI
 
 # Function to encode the image to base64
 def encode_image(image_file):
     return base64.b64encode(image_file.getvalue()).decode("utf-8")
 
+
 st.set_page_config(page_title="Stock Price Analyst", layout="centered", initial_sidebar_state="collapsed")
 # Streamlit page setup
 st.title("📈 Stock Price Analyst: `GPT-4 Turbo with Vision` 👀")
 
-# Retrieve the OpenAI API Key
-api_key = st.secrets["api_secret"]
+
+# Retrieve the OpenAI API Key from secrets
+api_key = db.secrets.get(name="OPENAI_API_KEY")
 
 # Initialize the OpenAI client with the API key
 client = OpenAI(api_key=api_key)
